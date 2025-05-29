@@ -19,7 +19,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description ?? ""} />
       </head>
       <body className="bg-pale-blue antialiased">
-        {/* <Header /> */}
+        <Header />
         <main>{children}</main>
       </body>
     </html>
