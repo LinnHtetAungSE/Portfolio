@@ -1,7 +1,6 @@
 import { FeatureProject } from "@/type";
 import { ArrowDownToDot, Github } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 const ProjectCard: React.FC<{ project: FeatureProject }> = ({ project }) => {
   return (
@@ -36,17 +35,17 @@ const ProjectCard: React.FC<{ project: FeatureProject }> = ({ project }) => {
 
         <div className="flex space-x-4">
           {project.gitHubLink && (
-            <Link
+            <a
               href={project.gitHubLink}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-muted-blue p-1.5 rounded-full"
             >
               <Github size={20} />
-            </Link>
+            </a>
           )}
           {project.websiteLink && (
-            <Link
+            <a
               href={project.websiteLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -54,7 +53,7 @@ const ProjectCard: React.FC<{ project: FeatureProject }> = ({ project }) => {
             >
               <ArrowDownToDot size={15} />
               <span className="text-sm">Visit</span>
-            </Link>
+            </a>
           )}
         </div>
       </div>

@@ -15,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Meta Tags for SEO */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={metadata.description ?? ""} />
       </head>

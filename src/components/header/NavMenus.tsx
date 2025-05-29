@@ -1,7 +1,6 @@
 "use client";
 
 import { navMenus } from "@/config/navMenus.config";
-import Link from "next/link";
 
 interface NavMenuProps {
   mobile?: boolean;
@@ -22,7 +21,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
     >
       {navMenus.map((menu) => (
         <li key={menu.href}>
-          <Link
+          <a
             href={menu.href}
             onClick={(e) => {
               setCloseNavbar();
@@ -35,7 +34,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
             className="relative px-1 py-2 text-dark-blue font-semibold transition-colors duration-200 hover:text-sky-900"
           >
             {menu.text}
-          </Link>
+          </a>
         </li>
       ))}
     </ul>
