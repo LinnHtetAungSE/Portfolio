@@ -3,6 +3,7 @@ import { Experience } from "@/type";
 
 export const ExperienceCard: React.FC<Experience> = ({
   date,
+  position,
   title,
   company,
   description,
@@ -12,6 +13,7 @@ export const ExperienceCard: React.FC<Experience> = ({
     <div className="bg-soft-cream shadow-md rounded-lg p-6 relative">
       <p className="text-sm text-gray-500">{date}</p>
       <h3 className="text-lg font-semibold text-gray-800 mt-1">{title}</h3>
+      <h3 className="font-semibold text-gray-800">{position}</h3>
       <p className="text-sm text-gray-600 italic">{company}</p>
       <p className="text-sm text-gray-700 mt-4">{description}</p>
 

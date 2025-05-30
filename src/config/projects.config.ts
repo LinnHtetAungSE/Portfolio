@@ -4,7 +4,7 @@ export const featureProjects: FeatureProject[] = [
   {
     name: "Brick Ledger Real estate",
     imgUrl: "/brick-ledger.png",
-    techs: ["Next.js", "Express.js", "Solidity", "Ether.js"],
+    techs: ["Next.js", "Express.js", "TypeScript", "Solidity", "Ether.js"],
     gitHubLink: "",
     websiteLink: "https://fe.dev.brickledger.d3lab.co",
     peekDescription:

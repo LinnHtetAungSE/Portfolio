@@ -14,12 +14,16 @@ const ContactInfo = () => {
       <div className="space-y-4">
         <div>
           <h3 className="font-bold">Phone</h3>
-          <p>0823148288</p>
+          <a href="tel:0823148288" className="hover:underline">
+            0823148288
+          </a>
         </div>
 
         <div>
           <h3 className="font-bold">Email</h3>
-          <p>linnh3064@gmail.com</p>
+          <a href="mailto:linnhtet3064@gmail.com" className="hover:underline">
+            linnh3064@gmail.com
+          </a>
         </div>
 
         <div>

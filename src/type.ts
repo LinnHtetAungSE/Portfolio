@@ -20,6 +20,7 @@ export interface SocialLink {
 export interface Experience {
   date: string;
   title: string;
+  position: string;
   company: string;
   description: string;
   skills: string[];

@@ -5,10 +5,11 @@ import { Button } from "../common/Button";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    username: "",
+    name: "",
     email: "",
     message: "",
   });
+  const [status, setStatus] = useState("Send");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -20,10 +21,26 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log("Form submitted:", formData);
+    setStatus("Sending...");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("Email sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("Failed to send email.");
+      }
+    } catch (error) {
+      setStatus("An error occurred.");
+    }
   };
 
   return (
@@ -31,16 +48,16 @@ const ContactForm = () => {
       <h2 className="text-xl md:text-2xl font-semibold mb-4">Contact Form</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="username" className="block mb-1">
-            Username
+          <label htmlFor="name" className="block mb-1">
+            Name
           </label>
           <input
             type="text"
-            id="username"
-            name="username"
-            placeholder="Please enter username here"
+            id="name"
+            name="name"
+            placeholder="Please enter name here"
             className="bg-soft-cream w-full px-4 py-2 border rounded focus:ring-sky-9 focus:ring-opacity-50"
-            value={formData.username}
+            value={formData.name}
             onChange={handleChange}
           />
         </div>
@@ -75,7 +92,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <Button type="submit">Send</Button>
+        <Button type="submit">{status}</Button>
       </form>
     </div>
   );
