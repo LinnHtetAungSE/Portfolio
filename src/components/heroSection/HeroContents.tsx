@@ -12,7 +12,7 @@ export const HeroContent: React.FC = () => {
       </p>
       <Button className="w-fit flex items-center gap-x-3 text-sm sm:text-base font-semibold group">
         <a
-          href="https://drive.google.com/uc?export=download&id=1sND1sDvMsr_hjFYSOQh1KR9kWevlingV"
+          href="https://drive.google.com/uc?export=download&id=1B3NZSjgYJAknozkxuzf_m2EnEUfqgcM-"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-x-3"
