@@ -55,7 +55,7 @@ export const experiences: Experience[] = [
     position: "Frontend Developer",
     company: "BIGSOFT Co., Ltd",
     description:
-      "As a Frontend Developer, I revamped the real estate platform for a Cambodian company, implementing a modern UI/UX, optimizing performance, and enhancing property management tools to deliver a seamless user experience. Additionally, I integrated Google API Geocoding for property searches and implemented interactive map features, enabling users to view property information directly on the map.",
+      "As a Frontend Developer, I revamped the real estate platform, implementing a modern UI/UX, optimizing performance, and enhancing property management tools to deliver a seamless user experience. Additionally, I integrated Google API Geocoding for property searches and implemented interactive map features, enabling users to view property information directly on the map.",
     skills: ["Nuxt.js", "Vue.js", "Pinia", "Google Map API"],
   },
 ];
