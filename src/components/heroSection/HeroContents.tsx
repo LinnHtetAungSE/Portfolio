@@ -12,9 +12,8 @@ export const HeroContent: React.FC = () => {
       </p>
       <Button className="w-fit flex items-center gap-x-3 text-sm sm:text-base font-semibold group">
         <a
-          href="https://drive.google.com/uc?export=download&id=1B3NZSjgYJAknozkxuzf_m2EnEUfqgcM-"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/LinHtetAung_Resume.pdf"
+          download
           className="flex items-center gap-x-3"
         >
           <Download size={18} className="group-hover:animate-bounce" />
