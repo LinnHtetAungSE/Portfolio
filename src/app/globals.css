@@ -58,3 +58,156 @@ body {
   padding: 0;
   margin: 0;
 }
+
+/* ===============================
+   Gradient Background Animation
+================================= */
+
+.gradient-bg {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(120deg,
+      #38bdf8,
+      #6366f1,
+      #a855f7,
+      #38bdf8);
+
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease-in-out infinite;
+
+  opacity: 0.15;
+  filter: blur(80px);
+}
+
+/* DARK MODE */
+.dark .gradient-bg {
+  opacity: 0.25;
+}
+
+/* Smooth gradient motion */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 100%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ===============================
+   Grid Overlay (clean look)
+================================= */
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.dark .grid-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+/* ===============================
+   Text Gradient (Premium Look)
+================================= */
+.text-gradient {
+  background: linear-gradient(90deg,
+      #38bdf8,
+      #6366f1,
+      #a855f7,
+      #38bdf8);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth gradient animation */
+@keyframes gradientX {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradientX 6s linear infinite;
+}
+
+
+/* ===============================
+   Fade + Slide Animations
+================================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+
+/* ===============================
+   Delay Utilities (no Tailwind config needed)
+================================= */
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+}

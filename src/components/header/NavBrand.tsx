@@ -1,10 +1,11 @@
 export const NavBrand: React.FC = () => {
   return (
     <a
-      href={"/"}
-      className="flex items-center font-bold text-dark-blue text-xl hover:text-sky-900 transition-colors duration-200"
+      href="/"
+      className="text-xl font-black text-slate-900 tracking-tighter group flex items-center gap-2"
     >
-      Linn Htet.
+      <div className="w-2 h-2 bg-sky-600 rounded-full" />
+      Lin Htet.
     </a>
   );
 };

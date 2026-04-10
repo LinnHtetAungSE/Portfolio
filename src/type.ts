@@ -8,7 +8,7 @@ export interface NavigationMenu {
 export interface PersonalSkill {
   name: string;
   since: string;
-  score: string;
+  score: number;
 }
 
 export interface SocialLink {
@@ -26,7 +26,7 @@ export interface Experience {
   skills: string[];
 }
 
-export interface FeatureProject {
+export interface FeaturedProject {
   name: string;
   imgUrl: string;
   techs: string[];
@@ -35,4 +35,16 @@ export interface FeatureProject {
   peekDescription: string;
   fullDescription: string;
   year: string;
+}
+
+export interface Library {
+  name: string;
+  imgUrl?: string;
+  version: string;
+  description: string;
+  tags: string[];
+  stats?: { stars: string; downloads: string };
+  status: string;
+  npmLink?: string;
+  websiteLink?: string;
 }

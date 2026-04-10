@@ -8,7 +8,7 @@ export const experiences: Experience[] = [
     company:
       "Ace Data Systems Co., Ltd Myanmar ( Outsourcing to D3-SG Co., Ltd Singapore )",
     description:
-      "In my role as a Fullstack Software Engineer at ACE Data Systems Co., Ltd. (outsourced to D3-SG Co., Ltd.), ’m working on a real estate project that interacts with blockchain technology. Since blockchain was new to me, I had to learn and implement it simultaneously, which demonstrates my ability to quickly adapt to new technologies. In this project, I’ve worked on wallet integrations using Ether.js, implemented token purchasing from blockchain contracts, and collaborated on creating and optimizing backend services.",
+      "I’m working on a real estate project that interacts with blockchain technology. Since blockchain was new to me, I had to learn and implement it simultaneously, which demonstrates my ability to quickly adapt to new technologies. In this project, I’ve worked on wallet integrations using Ether.js, implemented token purchasing from blockchain contracts, and collaborated on creating and optimizing backend services.",
     skills: ["Next.js", "Express.js", "TypeScript", "Solidity", "Ethers.js"],
   },
   {
@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
     company:
       "Ace Data Systems Co., Ltd Myanmar ( Outsourcing to D3-SG Co., Ltd Singapore )",
     description:
-      "In my role as a Fullstack Software Engineer at ACE Data Systems Co., Ltd. (outsourced to D3-SG Co., Ltd.), I worked on such as maintaining and enhancing existing features and implementing new ones. Key achievements included creating a login system, developing an admin panel, and adding a one-year complimentary product feature. This task required enhancing validation processes for campaign and referral codes, optimizing performance, and ensuring a smooth user experience.",
+      "I worked on such as maintaining and enhancing existing features and implementing new ones. Key achievements included creating a login system, developing an admin panel, and adding a one-year complimentary product feature. This task required enhancing validation processes for campaign and referral codes, optimizing performance, and ensuring a smooth user experience.",
     skills: ["Next.js", "TypeScript", ".NET"],
   },
   {
@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
     company:
       "Ace Data Systems Co., Ltd Myanmar ( Outsourcing to D3-SG Co., Ltd Singapore )",
     description:
-      "In my role as a Fullstack Software Engineer at ACE Data Systems Co., Ltd. (outsourced to D3-SG Co., Ltd.), my focus was on enhancing and maintaining existing features. For example, I modified validation logic based on specific user groups, resolved UI issues, and added new features like the referral page. This role also gave me hands-on experience with TM-Backend, where I collaborated to ensure seamless integration of frontend and backend functionalities",
+      "My focus was on enhancing and maintaining existing features. For example, I modified validation logic based on specific user groups, resolved UI issues, and added new features like the referral page. This role also gave me hands-on experience with TM-Backend, where I collaborated to ensure seamless integration of frontend and backend functionalities",
     skills: ["Next.js", "TypeScript", ".NET"],
   },
   {

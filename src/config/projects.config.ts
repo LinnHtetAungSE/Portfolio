@@ -1,6 +1,6 @@
-import { FeatureProject } from "@/type";
+import { FeaturedProject } from "@/type";
 
-export const featureProjects: FeatureProject[] = [
+export const featuredProjects: FeaturedProject[] = [
   {
     name: "Brick Ledger Real estate",
     imgUrl: "/brick-ledger.png",

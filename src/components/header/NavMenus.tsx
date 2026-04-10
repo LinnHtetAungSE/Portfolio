@@ -15,8 +15,8 @@ export const NavMenu: React.FC<NavMenuProps> = ({
     <ul
       className={`${
         mobile
-          ? "flex flex-col items-center space-y-4"
-          : "flex items-center space-x-6"
+          ? "flex flex-col items-center space-y-6"
+          : "flex items-center space-x-10"
       }`}
     >
       {navMenus.map((menu) => (
@@ -31,7 +31,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
                 targetElement.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="relative px-1 py-2 text-dark-blue font-semibold transition-colors duration-200 hover:text-sky-900"
+            className="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-400 transition-colors duration-300 hover:text-slate-900"
           >
             {menu.text}
           </a>

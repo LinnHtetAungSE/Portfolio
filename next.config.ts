@@ -2,6 +2,20 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cache-brain.netlify.app",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "npmjs.org",
+        pathname: "**",
+      },
+    ],
+  },
   env: {
     SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
     SENDGRID_ACCOUNT_EMAIL: process.env.SENDGRID_ACCOUNT_EMAIL,
