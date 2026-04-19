@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-white antialiased text-slate-900 relative">
-        <div className="fixed inset-0 -z-50 overflow-hidden pointer-events-none bg-white dark:bg-[#0b0f19]">
+        <div className="fixed inset-0 -z-50 overflow-hidden pointer-events-none bg-[#0b0f19]">
           <div className="gradient-bg" />
           <div className="grid-overlay" />
         </div>
